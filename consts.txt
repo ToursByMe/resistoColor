@@ -1,0 +1,35 @@
+ng new master --routing true
+
+ng g m commons --routing true
+
+ng g c commons/ header --export
+ng g c commons/ home --export
+ng g c commons/ navbar --export
+ng g c commons/ footer --export
+ng g c commons/ notfound --export
+
+ng g m member --routing true
+
+ng g c member/myform --export
+
+
+ng g m formmember --routing true
+	   
+ng g c formmember/ membermanager --export
+ng g c formmember/ memberlist --export
+
+//iterator solution
+const iterator = colores.keys();
+ 
+for(const key of iterator){
+    console.log(key);
+};
+
+/*const iterator2 = (key) =>{
+    for (const key of iterator){
+        return key;
+    }
+}; */
+
+//function string ecma6
+//definition of what is looking for=>remember first exercism
